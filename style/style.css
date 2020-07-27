@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Andale Mono;
+    src: url("../font/andale.ttf");
+}
+
 body {
     color: white;
     background-color: black;
-    font-family: Krungthep;
+    font-family: 'Krungthep', sans-serif;
 }
 
 .section1 {
@@ -74,21 +79,21 @@ body {
 }
 
 .parallax__layer--base {
-    background-image: url(img/smoke.png);
+    background-image: url(../img/smoke.png);
     background-repeat: no-repeat;
     background-position: 35% 182%;
     background-size: 113%;
 }
 
 .parallax__layer--back {
-    background-image: url(img/Astronaut1.png);
+    background-image: url(../img/Astronaut1.png);
     background-repeat: no-repeat;
     background-position: center 108%;
     background-size: 97%;
 }
 
 .parallax__layer--backSmoke {
-    background-image: url(img/smoke.png);
+    background-image: url(../img/smoke.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -98,7 +103,6 @@ body {
 .paralax {
     position: relative;
     width: 100%;
-    /*    height: 100vh;*/
     height: 54.5vw;
     overflow: hidden;
     display: flex;
@@ -150,7 +154,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 4.03vw 3.44vw 2.35vw 2.6vw;
-    background-image: url(img/earth.png);
+    background-image: url(../img/earth.png);
     background-repeat: no-repeat;
     background-position: 50% 113%;
     background-size: cover;
@@ -197,7 +201,7 @@ body {
 
 .boxLeft .text {
     width: 15.1vw;
-    font-family: Andale Mono;
+    font-family: 'Andale Mono', monospace;
     font-size: 1vw;
     letter-spacing: 0.3vw;
     text-align: right;
@@ -336,7 +340,6 @@ body {
     position: relative;
 }
 
-
 .section3 .mars {
     width: 8.5vw;
     height: 10.7vw;
@@ -345,17 +348,23 @@ body {
 }
 
 .section3 .mars .flip-card-front {
-    background-image: url(img/MARS1.png);
+    background-image: url(../img/MARS1.png);
+    font-size: 1.1vw;
+    letter-spacing: 1px;
+    color: #ab5535;
+    padding: 0 0 0.5vw;
 }
 
 .section3 .mars .flip-card-inner:hover,
 .section3 .pluto .flip-card-inner:hover {
     transform: scale(2.3) translateZ(0px) rotateX(-180deg);
+    -webkit-transform: scale(2.3) translateZ(0px) rotateX(-180deg);
 }
 
 .section3 .moon .flip-card-inner:hover,
 .section3 .venus .flip-card-inner:hover {
     transform: scale(1.5) translateZ(0px) rotateX(-180deg);
+    -webkit-transform: scale(1.5) translateZ(0px) rotateX(-180deg);
 }
 
 .section3 .flip-card-inner:hover {
@@ -363,7 +372,7 @@ body {
 }
 
 .section3 .mars .flip-card-back {
-    background-image: url(img/MARS-TILE.png);
+    background-image: url(../img/MARS-TILE.png);
 }
 
 .section3 .pluto {
@@ -374,11 +383,15 @@ body {
 }
 
 .section3 .pluto .flip-card-front {
-    background-image: url(img/PLUTO1.png);
+    background-image: url(../img/PLUTO1.png);
+    font-size: 1.1vw;
+    letter-spacing: 1px;
+    color: #d0b76a;
+    padding: 0 0 0.5vw;
 }
 
 .section3 .pluto .flip-card-back {
-    background-image: url(img/PLUTO-TILE.png);
+    background-image: url(../img/PLUTO-TILE.png);
 }
 
 .section3 .moon {
@@ -389,11 +402,13 @@ body {
 }
 
 .section3 .moon .flip-card-front {
-    background-image: url(img/MOON1.png);
+    background-image: url(../img/MOON1.png);
+    font-size: 1.8vw;
+    letter-spacing: 1px;
 }
 
 .section3 .moon .flip-card-back {
-    background-image: url(img/MOON-TILE.png);
+    background-image: url(../img/MOON-TILE.png);
 }
 
 .section3 .venus {
@@ -404,11 +419,14 @@ body {
 }
 
 .section3 .venus .flip-card-front {
-    background-image: url(img/VENUS1.png);
+    background-image: url(../img/VENUS1.png);
+    font-size: 1.8vw;
+    letter-spacing: 1px;
+    color: #dabf6f;
 }
 
 .section3 .venus .flip-card-back {
-    background-image: url(img/VENUS-TILE.png);
+    background-image: url(../img/VENUS-TILE.png);
 }
 
 .section3 .center {
@@ -419,11 +437,14 @@ body {
 }
 
 .section3 .center .flip-card-front {
-    background-image: url(img/SPACE1.png);
+    background-image: url(../img/SPACE1.png);
+    font-size: 3.5vw;
+    letter-spacing: -1px;
+    padding: 0 0 1.1vw;
 }
 
 .section3 .center .flip-card-back {
-    background-image: url(img/SPACE-TILE.png);
+    background-image: url(../img/SPACE-TILE.png);
     background-size: 100%;
     border-radius: 7%;
 }
@@ -447,7 +468,7 @@ body {
     text-align: left;
     width: 100%;
     text-transform: uppercase;
-    font-family: Krungthep;
+    font-family: 'Krungthep', sans-serif;
 }
 
 .section3 .flip-card-back .text {
@@ -465,7 +486,7 @@ body {
     letter-spacing: 0.1vw;
     text-align: center;
     text-transform: uppercase;
-    font-family: Krungthep;
+    font-family: 'Krungthep', sans-serif;
 }
 
 .section3 .center .flip-card-back {
@@ -586,7 +607,7 @@ body {
 
 .section4 .boxLeft .textBox {
     width: 56.3%;
-    background-image: url(img/smokeL.png);
+    background-image: url(../img/smokeL.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -719,9 +740,11 @@ body {
     font-size: 2vw;
     letter-spacing: 0.57vw;
     text-transform: uppercase;
-    font-family: Krungthep;
+    font-family: 'Krungthep', sans-serif;
     padding-left: 0.4vw;
     cursor: pointer;
+    position: relative;
+    z-index: 3;
 
 }
 
@@ -734,7 +757,7 @@ body {
     margin: -12vw 0 0;
     position: relative;
     z-index: 2;
-    background-image: url(img/orange-rectangle.png);
+    background-image: url(../img/orange-rectangle.png);
     background-repeat: no-repeat;
     background-position: 50% 65%;
     background-size: 82%;
@@ -758,4 +781,44 @@ body {
     margin: 0 0 3.65vw;
     position: relative;
     z-index: 2;
+}
+
+.errorBox {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 16.4vw 4.9vw;
+    background-image: url(../img/errorBG.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.errorBox::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-image: url(../img/errorImg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 37%;
+    background-size: cover;
+}
+
+.errorBox h1 {
+    font-size: 4.43vw;
+    letter-spacing: 2.2vw;
+    margin: 0 0 3vw;
+}
+
+.errorBox p {
+    font-size: 2.55vw;
+    letter-spacing: 0.5vw;
+    padding-right: 9vw;
 }

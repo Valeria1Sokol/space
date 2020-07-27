@@ -9,11 +9,20 @@
         padding: 4vw 0 0;
     }
 
+    .section1 .subTitle {
+        font-size: 2vw;
+        padding: 4vw 3.23vw 0;
+    }
+
+    .parallax__layer--base {
+        background-position: 35% 143%;
+    }
+
     .section2 {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 4.03vw 3.44vw 8.35vw 2.6vw;
+        padding: 9vw 3.44vw 9vw;
     }
 
     .section2 .boxLeft {
@@ -21,44 +30,45 @@
     }
 
     .section2 .boxLeft .tittle {
-        font-size: 5.02vw;
+        font-size: 6.02vw;
         letter-spacing: 0.94vw;
         text-align: center;
         display: flex;
         flex-direction: column;
         padding: 0;
-        line-height: 6vw;
+        line-height: 7vw;
     }
 
     .section2 .boxLeft .tittle span {
-        font-size: 2.61vw;
+        font-size: 3vw;
         padding-left: 0;
     }
 
     .section2 .boxLeft .subTittle {
-        font-size: 3.34vw;
+        font-size: 4vw;
         text-align: center;
     }
 
     .rainbowAs {
-        width: 29.5vw;
+        width: 36.5vw;
+        margin: 0 0 0 -10.7vw;
     }
 
     .boxLeft .text {
-        width: 28.1vw;
-        font-size: 2vw;
+        width: 39.1vw;
+        font-size: 2.5vw;
         letter-spacing: 0.5vw;
-        padding: 1.5vw 2.1vw;
+        padding: 4.5vw 2.1vw;
     }
 
     .back {
-        left: 21.5%;
-        height: 91%;
-        width: 28.1vw;
+        left: 15.5%;
+        height: 84%;
+        width: 39.1vw;
     }
 
     .section2 .boxLeft .textColumn {
-        margin: -1.5vw 0 6vw;
+        margin: -1.5vw 0 12vw;
     }
 
     .section2 .boxRight {
@@ -66,11 +76,15 @@
     }
 
     .section2 .boxRight .tittle {
-        font-size: 4.12vw;
+        font-size: 5.12vw;
         letter-spacing: 1vw;
         padding-left: 0;
         margin: 0 0 5.3vw;
         text-align: center;
+    }
+
+    .section2 .textBox {
+        padding: 2.3vw 2.3vw;
     }
 
     .section2 .textBox .sub {
@@ -80,7 +94,7 @@
     }
 
     .section2 .textBox .textColumn .column {
-        font-size: 2vw;
+        font-size: 2.5vw;
         letter-spacing: 0.4vw;
         line-height: 1.6;
     }
@@ -91,13 +105,14 @@
     }
 
     .section3 .title {
-        font-size: 4.6vw;
+        font-size: 5.6vw;
         letter-spacing: 1.78vw;
         margin: 0 0 6vw;
     }
 
     .section3 .planetBlock {
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     .section3 .center,
@@ -132,7 +147,7 @@
     .section3 .pluto .flip-card-back {
         width: 85%;
         height: 103%;
-        padding: 4.3vw 2vw 0 1.6vw;
+        padding: 3.3vw 2vw 0 1.6vw;
         align-items: center;
         margin: 0 5.3vw;
     }
@@ -152,13 +167,14 @@
     .section3 .moon .flip-card-back .text,
     .section3 .venus .flip-card-back .text,
     .section3 .flip-card-back .text {
-        font-size: 2vw;
+        font-size: 2.5vw;
         letter-spacing: 0.7vw;
-        margin: 0 0 3.2vw;
+        margin: 0 0 3vw;
         line-height: 1.3;
         width: 80%;
     }
 
+    .section3 .center .flip-card-back .text,
     .section3 .center .flip-card-back {
         width: 100%;
     }
@@ -168,6 +184,14 @@
     .section3 .venus .flip-card-back .bigTitle {
         font-size: 4.6vw;
         letter-spacing: 0.6vw;
+    }
+
+    .section3 .center .flip-card-front,
+    .section3 .mars .flip-card-front,
+    .section3 .moon .flip-card-front,
+    .section3 .pluto .flip-card-front,
+    .section3 .venus .flip-card-front {
+        font-size: 8.5vw;
     }
 
     .section4 {
@@ -254,12 +278,30 @@
 
     .section5 .chartBox {
         width: 92.7%;
-        height: 127.63vw;
+        height: 73vw;
         margin: 0 0 3.65vw;
         z-index: 2;
     }
 
     .section5 .planet {
         position: absolute;
+    }
+}
+
+@media (max-width: 425px) {
+    .section5 .chartBox {
+        height: 127.63vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .section5 .chartBox {
+        height: 155.63vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .section5 .chartBox {
+        height: 181.63vw;
     }
 }
