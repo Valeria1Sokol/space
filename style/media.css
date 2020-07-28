@@ -112,7 +112,7 @@
 
     .section3 .planetBlock {
         flex-direction: column;
-/*        overflow-x: hidden;*/
+        overflow-x: hidden;
     }
 
     .section3 .center,
@@ -142,6 +142,13 @@
     .section3 .mars .flip-card-inner:hover,
     .section3 .moon .flip-card-inner:hover,
     .section3 .venus .flip-card-inner:hover {
+        transform: scale(1) translateZ(0px) rotateX(-180deg);
+        -webkit-transform: scale(1) translateZ(0px) rotateX(-180deg);
+    }
+     .section3 .pluto .flip-card-inner:active,
+    .section3 .mars .flip-card-inner:active,
+    .section3 .moon .flip-card-inner:active,
+    .section3 .venus .flip-card-inner:active {
         transform: scale(1) translateZ(0px) rotateX(-180deg);
         -webkit-transform: scale(1) translateZ(0px) rotateX(-180deg);
     }
