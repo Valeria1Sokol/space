@@ -13,11 +13,13 @@
     background-color: transparent;
     
     
+/*
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     
     perspective: 1000px;
     -webkit-perspective: 1000px;
+*/
 
     /* Remove this if you don't want the 3D effect */
 }
