@@ -157,6 +157,10 @@
         margin: 0 5.3vw;
     }
 
+    .section3 .center .flip-card-back {
+        margin: 0;
+    }
+
     .section3 .center .flip-card-back h1,
     .section3 .moon .flip-card-back h1,
     .section3 .venus .flip-card-back h1,
