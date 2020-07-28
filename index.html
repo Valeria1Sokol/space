@@ -117,7 +117,7 @@
                             <span class="bigTitle">space</span>
                         </p>
 
-                         <p class="text">Once saturation is achieved, the remaining pools VENUS, MOON, MARS<br> and PLUTO<br> will open</p>
+                        <p class="text">Once saturation is achieved, the remaining pools VENUS, MOON, MARS<br> and PLUTO<br> will open</p>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                             <span class="bigTitle">space</span>
                         </p>
 
-                         <p class="text">Once saturation is achieved, the remaining pools VENUS, MOON, MARS<br> and PLUTO<br> will open</p>
+                        <p class="text">Once saturation is achieved, the remaining pools VENUS, MOON, MARS<br> and PLUTO<br> will open</p>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                             <span class="bigTitle">space</span>
                         </p>
 
-                         <p class="text">Once saturation is achieved, the remaining pools VENUS, MOON, MARS<br> and PLUTO<br> will open</p>
+                        <p class="text">Once saturation is achieved, the remaining pools VENUS, MOON, MARS<br> and PLUTO<br> will open</p>
                     </div>
                 </div>
             </div>
@@ -197,16 +197,16 @@
                     <div>
                         <div>
                             <label>Name<span>*</span></label>
-                            <input type="text">
+                            <input type="text" id="name" value="">
                         </div>
                         <div>
                             <label>Email<span>*</span></label>
-                            <input type="text">
+                            <input type="text" id="email">
                         </div>
                     </div>
                     <div>
                         <label>Message</label>
-                        <textarea></textarea>
+                        <textarea id="message"></textarea>
                     </div>
                 </div>
                 <a class="subBtn">SUBMIT</a>
@@ -231,7 +231,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-
     </script>
     <script type="text/javascript">
         let astronaut = document.getElementById("astronaut");
@@ -255,7 +254,6 @@
             scroll = offset;
             smoke.style.width = (100 + scroll / 5) + '%';
         })
-
     </script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -267,9 +265,16 @@
                     scrollTop: top
                 }, 1500);
             });
+            $(".subBtn").click(function() {
+                var name = document.getElementById("name");
+                var email = document.getElementById("email");
+                var message = document.getElementById("message");
+
+                name.value = '';
+                email.value = '';
+                message.value = '';
+
+            })
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
