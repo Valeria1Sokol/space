@@ -112,7 +112,7 @@
 
     .section3 .planetBlock {
         flex-direction: column;
-        overflow-x: hidden;
+/*        overflow-x: hidden;*/
     }
 
     .section3 .center,
@@ -143,6 +143,7 @@
     .section3 .moon .flip-card-inner:hover,
     .section3 .venus .flip-card-inner:hover {
         transform: scale(1) translateZ(0px) rotateX(-180deg);
+        -webkit-transform: scale(1) translateZ(0px) rotateX(-180deg);
     }
 
     .section3 .center .flip-card-back,
