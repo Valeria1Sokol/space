@@ -77,3 +77,51 @@
     transform: translateZ(0px) rotateX(-180deg);
     -webkit-transform: translateZ(0px) rotateX(-180deg);
 }
+
+.subBtn {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: calc(50% - 2.5rem - 5px);
+  left: calc(50% - 6rem - 5px);
+  transition: transform 0.25s;
+  text-align: center;
+}
+.subBtn::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 5px solid transparent;
+  opacity: 0;
+  pointer-events: none;
+  
+  transition: opacity 1s;
+}
+.subBtn:active {
+  transform: scale(0.96);
+}
+.subBtn:active::before {
+  opacity: 1;
+}
+.subBtn::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 5px solid transparent;
+  opacity: 0;
+  pointer-events: none;
+  border-image-slice: 1;
+  z-index: 0;
+  transition: opacity 0.5s;
+}
+.subBtn:hover::after {
+  opacity: 1;
+}

@@ -1,8 +1,9 @@
 @media all and (max-width:768px) {
     .section1 header a {
-        font-size: 2.2vw;
+        font-size: 3vw;
         padding: 0 3vw;
         height: 4.34vw;
+        letter-spacing: 0.7vw;
     }
 
     .section1 header {
@@ -10,7 +11,7 @@
     }
 
     .section1 .subTitle {
-        font-size: 2vw;
+        font-size: 2.5vw;
         padding: 4vw 3.23vw 0;
     }
 
@@ -63,8 +64,10 @@
 
     .back {
         left: 15.5%;
-        height: 84%;
         width: 39.1vw;
+        font-size: 2.5vw;
+        letter-spacing: 0.5vw;
+        padding: 4.5vw 2.1vw;
     }
 
     .section2 .boxLeft .textColumn {
@@ -76,8 +79,8 @@
     }
 
     .section2 .boxRight .tittle {
-        font-size: 5.12vw;
-        letter-spacing: 1vw;
+        font-size: 6.12vw;
+        letter-spacing: 1.2vw;
         padding-left: 0;
         margin: 0 0 5.3vw;
         text-align: center;
@@ -88,8 +91,8 @@
     }
 
     .section2 .textBox .sub {
-        font-size: 2.8vw;
-        letter-spacing: 0.52vw;
+        font-size: 3.8vw;
+        letter-spacing: 1vw;
         margin: 0 0 4.95vw;
     }
 
@@ -145,7 +148,8 @@
         transform: scale(1) translateZ(0px) rotateX(-180deg);
         -webkit-transform: scale(1) translateZ(0px) rotateX(-180deg);
     }
-     .section3 .pluto .flip-card-inner:active,
+
+    .section3 .pluto .flip-card-inner:active,
     .section3 .mars .flip-card-inner:active,
     .section3 .moon .flip-card-inner:active,
     .section3 .venus .flip-card-inner:active {
@@ -243,12 +247,13 @@
     }
 
     .section4 .boxLeft .contTitle {
-        font-size: 3.14vw;
-        letter-spacing: 1.3vw;
+        font-size: 4.14vw;
+        letter-spacing: 1.5vw;
     }
 
     .section4 .boxLeft .inputBox label {
-        font-size: 2.3vw;
+        font-size: 2.8vw;
+        letter-spacing: 0.7vw;
     }
 
     .section4 .boxLeft .inputBox {
@@ -271,14 +276,14 @@
     }
 
     .section4 .boxLeft .lineBoxTwo {
-        margin-top: 15vw;
+        margin-top: 21vw;
     }
 
     .section4 .boxLeft .subBtn {
         width: 22.4vw;
         height: 6.23vw;
         border-radius: 0.6vw;
-        margin: -3.6vw 0 0 38vw;
+        margin: -3.6vw 0 0;
         font-size: 3vw;
         cursor: pointer;
     }
