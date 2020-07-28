@@ -125,6 +125,11 @@
         margin: 5vw 0;
     }
 
+    .section3 .center {
+        position: relative;
+        z-index: 3;
+    }
+
     .section3 .moon .flip-card-front,
     .section3 .pluto .flip-card-front,
     .section3 .mars .flip-card-front,
@@ -257,7 +262,7 @@
         margin-top: 15vw;
     }
 
-    .section4 .boxLeft input[type=button] {
+    .section4 .boxLeft .subBtn {
         width: 22.4vw;
         height: 6.23vw;
         border-radius: 0.6vw;
@@ -286,6 +291,21 @@
 
     .section5 .planet {
         position: absolute;
+    }
+
+    .errorBox {
+        background-position: 18% 40%;
+        padding: 0 4.9vw 100px;
+        justify-content: center;
+    }
+
+    .errorBox h1 {
+        font-size: 5.43vw;
+        margin: 0 0 5vw;
+    }
+
+    .errorBox p {
+        font-size: 3.55vw;
     }
 }
 

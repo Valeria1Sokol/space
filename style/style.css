@@ -634,6 +634,10 @@ body {
     padding-left: 1.93vw;
 }
 
+.section4 .boxLeft .line1 span {
+    padding-right: 0.1vw;
+}
+
 
 .section4 .boxLeft .line2 {
     text-align: right;
@@ -728,7 +732,7 @@ body {
     padding: 0.3vw;
 }
 
-.section4 .boxLeft input[type=button] {
+.section4 .boxLeft .subBtn {
     width: 13.4vw;
     height: 3.23vw;
     background-color: #ce4627;
@@ -745,6 +749,10 @@ body {
     cursor: pointer;
     position: relative;
     z-index: 3;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
