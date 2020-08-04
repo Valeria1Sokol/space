@@ -11,9 +11,9 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    
-    
-/*
+
+
+    /*
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     
@@ -37,7 +37,7 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.planet:hover .flip-card-inner {
     transform: translateZ(0px) rotateX(-180deg);
     -webkit-transform: translateZ(0px) rotateX(-180deg);
 }
@@ -79,49 +79,54 @@
 }
 
 .subBtn {
-  position: absolute;
-  z-index: 1;
-  display: block;
-  top: calc(50% - 2.5rem - 5px);
-  left: calc(50% - 6rem - 5px);
-  transition: transform 0.25s;
-  text-align: center;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: calc(50% - 2.5rem - 5px);
+/*    left: calc(50% - 6rem - 5px);*/
+    transition: transform 0.25s;
+    text-align: center;
 }
+
 .subBtn::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  border: 5px solid transparent;
-  opacity: 0;
-  pointer-events: none;
-  
-  transition: opacity 1s;
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 5px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 1s;
 }
+
 .subBtn:active {
-  transform: scale(0.96);
+    transform: scale(0.96);
 }
+
 .subBtn:active::before {
-  opacity: 1;
+    opacity: 1;
 }
+
 .subBtn::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  border: 5px solid transparent;
-  opacity: 0;
-  pointer-events: none;
-  border-image-slice: 1;
-  z-index: 0;
-  transition: opacity 0.5s;
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 5px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+    border-image-slice: 1;
+    z-index: 0;
+    transition: opacity 0.5s;
 }
+
 .subBtn:hover::after {
-  opacity: 1;
+    opacity: 1;
 }

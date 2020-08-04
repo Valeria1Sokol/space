@@ -56,15 +56,20 @@ body {
 }
 
 .section1 .title {
+    /*
     font-size: 12.6vw;
     line-height: 9.9vw;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 8.8vw;
     padding: 12.24vw 0 2.6vw 5.63vw;
+*/
     cursor: default;
     position: relative;
     z-index: 0;
+    width: 62.3%;
+    height: 9.8vw;
+    margin: 7vw 0 4vw;
 }
 
 .section1 .subTitle {
@@ -88,10 +93,10 @@ body {
 }
 
 .parallax__layer--back {
-    background-image: url(../img/Astronaut1.png);
+    background-image: url(../img/Astronaut.png);
     background-repeat: no-repeat;
-    background-position: center 108%;
-    background-size: 97%;
+    background-position: 24% 100%;
+    background-size: 55%;
 }
 
 .parallax__layer--backSmoke {
@@ -155,7 +160,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 4.03vw 3.44vw 2.35vw 2.6vw;
+    padding: 4.03vw 3.44vw 2.35vw 5vw;
     background-image: url(../img/earth.png);
     background-repeat: no-repeat;
     background-position: 50% 113%;
@@ -173,7 +178,7 @@ body {
 .section2 .boxLeft .tittle {
     font-size: 3.02vw;
     letter-spacing: 0.94vw;
-    padding-left: 3.33vw;
+    padding-left: 0.33vw;
     margin: 0 0 7.7vw;
 }
 
@@ -241,7 +246,7 @@ body {
 }
 
 .section2 .boxRight {
-    width: 54%;
+    width: 57%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -317,6 +322,7 @@ body {
     align-items: center;
     position: relative;
     padding: 4.5vw 0 7.3vw;
+    overflow: hidden;
 }
 
 .section3 .title {
@@ -329,8 +335,9 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 1.2vw;
 }
 
 .section3 .planet {
@@ -343,37 +350,50 @@ body {
     font-weight: 100;
     letter-spacing: 0.3vw;
     position: relative;
+    width: 15.6vw;
+    height: 21.5vw;
+    font-size: 2.54vw;
+    letter-spacing: 1px;
+    padding: 0 0 1.5vw;
+    background-color: transparent;
 }
 
-.section3 .mars {
-    width: 12.5vw;
-    height: 15.5vw;
-    font-size: 22px;
-    margin: 0 1.5vw 0 0;
-}
 
 .section3 .mars .flip-card-front {
-    background-image: url(../img/MARS1.png);
-    background-size: 80%;
-    font-size: 1.1vw;
-    letter-spacing: 1px;
+    background-image: url(../img/MARS.png);
     color: #ab5535;
-    padding: 0 0 0.5vw;
 }
 
-.section3 .mars .flip-card-inner:hover,
-.section3 .pluto .flip-card-inner:hover {
-    transform: scale(1.5) translateZ(0px) rotateX(-180deg);
-    -webkit-transform: scale(1.5) translateZ(0px) rotateX(-180deg);
+.section3 .nova .flip-card-front {
+    background-image: url(../img/nova.png);
+    color: #10b0d9;
 }
 
-.section3 .moon .flip-card-inner:hover,
-.section3 .venus .flip-card-inner:hover {
-    transform: scale(1.5) translateZ(0px) rotateX(-180deg);
-    -webkit-transform: scale(1.5) translateZ(0px) rotateX(-180deg);
+.section3 .pluto .flip-card-front {
+    background-image: url(../img/PLUTO.png);
+    color: #dcce9d;
 }
 
-.section3 .flip-card-inner:hover {
+.section3 .moon .flip-card-front {
+    background-image: url(../img/moon.png);
+    color: #cecece;
+}
+
+.section3 .comet .flip-card-front {
+    background-image: url(../img/comet.png);
+    color: #7371a2;
+}
+
+.section3 .space .flip-card-front {
+    background-image: url(../img/SPACE1.png);
+}
+
+.section3 .planet .flip-card-inner:hover {
+    transform: scale(1.2) translateZ(0px) rotateX(-180deg);
+    -webkit-transform: scale(1.2) translateZ(0px) rotateX(-180deg);
+}
+
+.section3 .planet .flip-card-inner:hover {
     transition-duration: 1.2s !important;
 }
 
@@ -381,168 +401,36 @@ body {
     background-image: url(../img/MARS-TILE.png);
 }
 
-.section3 .mars .flip-card-back .text,
-.section3 .pluto .flip-card-back .text {
-    width: 93%;
-}
-
-.section3 .pluto {
-    width: 12.5vw;
-    height: 15.5vw;
-    font-size: 22px;
-    margin: 0 0 0 1.5vw;
-}
-
-.section3 .pluto .flip-card-front {
-    background-image: url(../img/PLUTO1.png);
-    background-size: 80%;
-    font-size: 1.1vw;
-    letter-spacing: 1px;
-    color: #d0b76a;
-    padding: 0 0 0.5vw;
-}
-
 .section3 .pluto .flip-card-back {
     background-image: url(../img/PLUTO-TILE.png);
-}
-
-.section3 .moon {
-    width: 12.5vw;
-    height: 15.5vw;
-    font-size: 32px;
-    margin: 0 1.5vw 0 0;
-}
-
-.section3 .moon .flip-card-front {
-    background-image: url(../img/MOON1.png);
-    font-size: 1.8vw;
-    letter-spacing: 1px;
 }
 
 .section3 .moon .flip-card-back {
     background-image: url(../img/MOON-TILE.png);
 }
 
-.section3 .venus {
-    width: 12.5vw;
-    height: 15.5vw;
-    font-size: 32px;
-    margin: 0 0 0 1.5vw;
+.section3 .comet .flip-card-back {
+    background-image: url(../img/comet-TILE.png);
 }
 
-.section3 .venus .flip-card-front {
-    background-image: url(../img/VENUS1.png);
-    font-size: 1.8vw;
-    letter-spacing: 1px;
-    color: #dabf6f;
-}
-
-.section3 .venus .flip-card-back {
-    background-image: url(../img/VENUS-TILE.png);
-}
-
-.section3 .center {
-    width: 28.7vw;
-    height: 26.4vw;
-    font-size: 62px;
-    z-index: 0;
-}
-
-.section3 .center .flip-card-front {
-    background-image: url(../img/SPACE1.png);
-    font-size: 3.5vw;
-    letter-spacing: -1px;
-    padding: 0 0 1.1vw;
-}
-
-.section3 .center .flip-card-back {
+.section3 .space .flip-card-back {
     background-image: url(../img/SPACE-TILE.png);
-    background-size: 100%;
-    border-radius: 7%;
 }
 
-.section3 .flip-card-back {
-    display: flex;
-    flex-direction: column;
-    padding: 1.9vw 2vw 0 2.5vw;
-    width: 110%;
-    height: 100%;
-    justify-content: flex-start;
-    text-align: center;
-    z-index: 2;
-    background-position: 33% 48%;
+.section3 .nova .flip-card-back {
+    background-image: url(../img/nova-TILE.png);
 }
-
-.section3 .flip-card-back h1 {
-    text-align: left;
-    width: 100%;
-    text-transform: uppercase;
-    font-family: 'Impact', sans-serif;
-    font-size: 1.3vw;
-    line-height: 1.3vw;
-    letter-spacing: 0.4vw;
-}
-
-.section3 .flip-card-back .text {
-    font-size: 0.6vw;
-    letter-spacing: 0.1vw;
-    margin: 0 0 1vw;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: 'Courier', sans-serif;
-    margin: 0 0 0.7vw;
-    line-height: 1.3;
-    width: 89%;
-}
-
-.section3 .flip-card-back .bigTitle {
-    font-size: 1vw;
-    letter-spacing: 0.3vw;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Impact', sans-serif;
-}
-
-.section3 .center .flip-card-back {
-    width: 79%;
-    height: 103%;
-    padding: 2.3vw 2vw 0 1.6vw;
-    align-items: center;
-    margin: 0 3vw;
-}
-
-.section3 .center .flip-card-back h1 {
-    font-size: 2.3vw;
-    line-height: 2.3vw;
-    letter-spacing: 0.6vw;
-    text-align: center;
-    margin: 0 0 2vw;
-}
-
-.section3 .center .flip-card-back .text {
-    font-size: 0.9vw;
-    letter-spacing: 0.3vw;
-    margin: 0 0 1.2vw;
-    line-height: 1.3;
-    width: 100%;
-}
-
-.section3 .center .flip-card-back .bigTitle {
-    font-size: 0.6vw;
-    letter-spacing: 0.1vw;
-}
-
 
 .section4 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    overflow-x: hidden;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
 .section4 .boxRight {
-    width: 59.9%;
+    width: 57.3%;
     background-color: #1d2330;
     background: linear-gradient(0deg, rgba(29, 35, 48, 1) 82%, transparent 82%);
     overflow: hidden;
@@ -561,125 +449,159 @@ body {
 }
 
 .section4 .boxLeft {
-    width: 63.5%;
+    width: 40.5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    position: relative;
-    margin: 0 -24vw 0 0;
-    z-index: 3;
 }
 
 .section4 .boxLeft .lineBoxOne {
-    flex-direction: row;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 1.5vw;
+    padding: 3vw 0 0 5.2vw;
     cursor: default;
+    background-image: url(../img/smokeL.png);
+    background-repeat: no-repeat;
+    background-position: 85% center;
+    background-size: cover;
 }
 
 .section4 .boxLeft .title {
-    font-size: 1.41vw;
-    letter-spacing: 0.56vw;
+    font-size: 1.66vw;
+    letter-spacing: 0.67vw;
     width: 100%;
     text-align: center;
 }
 
-.section4 .boxLeft .titleBig {
-    font-size: 3.91vw;
-    letter-spacing: 1.57vw;
+.section4 .boxLeft .titlePlanet {
+    font-size: 2.55vw;
+    letter-spacing: 1.02vw;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    text-transform: uppercase;
+    opacity: 0;
 }
 
-.section4 .boxLeft .textBox {
-    width: 56.3%;
-    background-image: url(../img/smokeL.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 5.94vw 7.1vw 5.94vw 4.2vw;
+.section4 .boxLeft .titlePlanet:nth-of-type(3) {
+    padding-left: 4vw;
+}
+
+.section4 .boxLeft .titlePlanet:nth-of-type(4) {
+    padding-left: 8vw;
+    transition-delay: 4s;
+}
+
+.section4 .boxLeft .titlePlanet:nth-of-type(5) {
+    padding-right: 11.4vw;
+    text-align: right;
+    transition-delay: 5s;
+}
+
+.section4 .boxLeft .titlePlanet:nth-of-type(6) {
+    padding-right: 4vw;
+    text-align: right;
+    transition-delay: 6s;
+}
+
+.section4 .boxLeft .titlePlanet:nth-of-type(7) {
+    text-align: right;
+    transition-delay: 7s;
+}
+
+[data-aos=zoom-in] {
+    transform: scale(1) !important;
 }
 
 .section4 .boxLeft .titleBox {
     margin: 0 0 1.25vw;
+    width: 100%;
 }
 
 .section4 .boxLeft .titleBox:last-of-type {
-    margin: 0;
-}
-
-.section4 .boxLeft img {
-    position: relative;
-    width: 25.3vw;
-    right: 16.1%;
-    margin-top: 7.6vw;
+    margin: -4vw 0 5vw;
 }
 
 .section4 .boxLeft .line1 {
     text-align: left;
-    padding-left: 1.93vw;
+    margin: 0 0 2.5vw;
+    padding-left: 4.4vw;
 }
 
 .section4 .boxLeft .line1 span {
-    padding-right: 0.1vw;
+    color: #1ec95b;
 }
 
-
-.section4 .boxLeft .line2 {
-    text-align: right;
-}
-
-.section4 .boxLeft .line3 {
-    padding-left: 7vw;
-}
-
-.section4 .boxLeft .line4 {
-    text-align: left;
+.section4 .boxLeft .title2 {
+    font-size: 1.41vw;
+    letter-spacing: 0.56vw;
+    width: 62%;
+    padding-left: 0.6vw;
+    transition-delay: 8s;
 }
 
 .section4 .boxLeft .line5 {
-    padding-right: 3.6vw;
+    padding-left: 3.8vw;
+    transition-delay: 9s;
 }
 
 .section4 .boxLeft .line6 {
     text-align: right;
-    padding-right: 1.7vw;
+    transition-delay: 10s;
 }
 
 .section4 .boxLeft .lineBoxTwo {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    padding: 2.34vw 0 0 6.1vw;
-
+    padding: 5.2vw 0 0 5.2vw;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
 }
 
 .section4 .boxLeft .contTitle {
-    font-size: 2.1vw;
-    letter-spacing: 0.83vw;
+    font-size: 1.93vw;
+    letter-spacing: 0.77vw;
     width: 100%;
-    text-align: left;
+    text-align: center;
     cursor: default;
 }
 
 .section4 .boxLeft .inputBox {
-    width: 66.2%;
+    width: 92%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding: 1.77vw 2.55vw 3.65vw;
+    padding: 0.84vw 0.7vw 2.1vw;
     background-color: rgba(255, 255, 255, 0.07);
-    margin: 1.41vw 9.6vw 0 0;
+    margin: 1.41vw 0vw 0 0;
     position: relative;
     z-index: 3;
 }
 
-.section4 .boxLeft .inputBox div {
+.section4 .boxLeft .inputBox .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.section4 .boxLeft .inputBox .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section4 .boxLeft .inputBox .bottom {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -712,7 +634,7 @@ body {
 }
 
 .section4 .boxLeft .inputBox textarea {
-    width: 16.05vw;
+    width: 100%;
     height: 6.15vw;
     background-color: rgba(255, 255, 255, 0.08);
     border: none;
@@ -729,7 +651,7 @@ body {
     border-radius: 0.32vw;
     border: none;
     outline: none;
-    margin: -1.6vw 20vw 0 0vw;
+    margin: -0.8vw 0 0;
     color: white;
     font-size: 2vw;
     letter-spacing: 0.57vw;
@@ -738,7 +660,7 @@ body {
     padding-left: 0.4vw;
     cursor: pointer;
     position: relative;
-    z-index: 3;
+    z-index: 10;
     text-decoration: none;
     display: flex;
     justify-content: center;
