@@ -46,6 +46,10 @@ body {
     letter-spacing: 0.5vw;
     cursor: pointer;
 }
+.section1 header a span{
+    font-size: 1.4vw;
+    font-weight: 300;
+}
 
 .section1 header a:last-of-type {
     border-right: none;
@@ -259,8 +263,12 @@ body {
     margin: 0 0 1.3vw;
 }
 
-.section2 .boxRight .tittle span {
+.section2 .boxRight .tittle:last-of-type {
     padding-left: 11.1vw;
+}
+
+.section2 .boxRight .tittle span {
+    font-size: 2.3vw;
 }
 
 .section2 .textBox {
@@ -329,6 +337,10 @@ body {
     font-size: 2.57vw;
     letter-spacing: 1vw;
     margin: 0 0 4vw;
+}
+
+.section3 .title span {
+    font-size: 2.8vw;
 }
 
 .section3 .planetBlock {
@@ -483,6 +495,12 @@ body {
     text-align: left;
     text-transform: uppercase;
     opacity: 0;
+    font-weight: 300;
+}
+
+.section4 .boxLeft .titlePlanet span {
+    font-size: 2.7vw;
+    font-weight: bold;
 }
 
 .section4 .boxLeft .titlePlanet:nth-of-type(3) {
@@ -491,24 +509,24 @@ body {
 
 .section4 .boxLeft .titlePlanet:nth-of-type(4) {
     padding-left: 8vw;
-    transition-delay: 4s;
+    transition-delay: 3.2s;
 }
 
 .section4 .boxLeft .titlePlanet:nth-of-type(5) {
     padding-right: 11.4vw;
     text-align: right;
-    transition-delay: 5s;
+    transition-delay: 3.9s;
 }
 
 .section4 .boxLeft .titlePlanet:nth-of-type(6) {
     padding-right: 4vw;
     text-align: right;
-    transition-delay: 6s;
+    transition-delay: 4.6s;
 }
 
 .section4 .boxLeft .titlePlanet:nth-of-type(7) {
     text-align: right;
-    transition-delay: 7s;
+    transition-delay: 5.4s;
 }
 
 [data-aos=zoom-in] {
@@ -530,8 +548,13 @@ body {
     padding-left: 4.4vw;
 }
 
-.section4 .boxLeft .line1 span {
+.section4 .boxLeft .line1 .green {
     color: #1ec95b;
+}
+
+.section4 .boxLeft .line1 span {
+    font-size: 1.8vw;
+    font-weight: 300;
 }
 
 .section4 .boxLeft .title2 {
@@ -539,17 +562,17 @@ body {
     letter-spacing: 0.56vw;
     width: 62%;
     padding-left: 0.6vw;
-    transition-delay: 8s;
+    transition-delay: 6.1s;
 }
 
 .section4 .boxLeft .line5 {
     padding-left: 3.8vw;
-    transition-delay: 9s;
+    transition-delay: 6.9s;
 }
 
 .section4 .boxLeft .line6 {
     text-align: right;
-    transition-delay: 10s;
+    transition-delay: 7.6s;
 }
 
 .section4 .boxLeft .lineBoxTwo {
