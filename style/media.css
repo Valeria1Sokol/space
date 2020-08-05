@@ -7,7 +7,7 @@
     }
 
     .section1 header a span {
-        font-size: 3.4vw;
+        font-size: 3.26vw;
         font-weight: 300;
     }
 
@@ -356,9 +356,6 @@
         height: 127.63vw;
     }
 
-    .section1 header a span {
-        padding: 0 0 0.5vw;
-    }
 }
 
 @media (max-width: 375px) {
@@ -366,9 +363,7 @@
         height: 155.63vw;
     }
 
-    .section1 header a span {
-        padding: 0;
-    }
+    
 }
 
 @media (max-width: 320px) {
